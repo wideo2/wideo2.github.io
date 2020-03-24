@@ -12,13 +12,13 @@
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;categories&#x2F;TIL&#x2F;index.html">
+<meta property="og:url" content="http://yoursite.com/categories/TIL/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
+<meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
+<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
 
@@ -167,29 +167,29 @@
             
         </h1>
         <div class="content">
-            <p>참고<br><a href="https://doublesprogramming.tistory.com/63" target="_blank" rel="noopener">https://doublesprogramming.tistory.com/63</a><br><a href="https://goodncuteman.tistory.com/58" target="_blank" rel="noopener">https://goodncuteman.tistory.com/58</a><br><a href="https://scshim.tistory.com/28" target="_blank" rel="noopener">https://scshim.tistory.com/28</a></p>
-<p>서블릿 컨테이너,서블릿과 redirect와 forward의 차이를 공부했다.</p>
-<h1 id="서블릿-컨테이너"><a href="#서블릿-컨테이너" class="headerlink" title="서블릿 컨테이너"></a>서블릿 컨테이너</h1><p>서블릿 컨테이너는 서블릿의 생명주기를 관리하고 요청이 들어올때마다 쓰레드를 만든다</p>
-<h1 id="서블릿"><a href="#서블릿" class="headerlink" title="서블릿"></a>서블릿</h1><p>서블릿은 init(),service(),destory()로 되어있고<br>service()는 요청에 따라 doget(),dopost()로 나뉘고 각요청은 자체적인쓰레드에 있고 동시에 여러개의 쓰레드를 제공해준다.</p>
-<h1 id="서블릿-컨테이너-서버요청-처리"><a href="#서블릿-컨테이너-서버요청-처리" class="headerlink" title="서블릿 컨테이너 서버요청 처리"></a>서블릿 컨테이너 서버요청 처리</h1><ol>
-<li>서버가 http 요청을 받는다.</li>
-<li>요청을 컨테이너에게 보내고</li>
-<li>컨테이너에 서블릿이 없으면 컨테이너 주소공간에 로드한다</li>
-<li>컨테이너가 init을 호출하면 초기화된다(처음 로드됐을때 한번만 초기화)</li>
-<li>컨테이너가 service를 호출하고 요청에 따라 처리한다 서블릿은 주소에 남아 다른 요청을 처리해준다<br>6  웹서버는 동적으로 생성된 결과를 올바른 위치 반환</li>
-</ol>
-<h1 id="JVM-역할"><a href="#JVM-역할" class="headerlink" title="JVM 역할"></a>JVM 역할</h1><p>jvm은 각 요청을 분리된 자바 쓰레드 내부에서 처리</p>
-<hr>
-<p>일단 redirect와 forward대해 알아보자면</p>
-<h1 id="redirect"><a href="#redirect" class="headerlink" title="redirect"></a>redirect</h1><p>redirect는 요청을 하면 server 다른페이지를 이동하라고 요청해주는 것이다.<br>client쪽에서 다시 요청받은 것을 재요청하면  요청받은것을 server가 응답해준다. 이때 url의 주소가 바뀐다.<br>req,resp는 다른페이지 이동시 초기화 된다.</p>
-<h1 id="redirect-쓰임새"><a href="#redirect-쓰임새" class="headerlink" title="redirect 쓰임새"></a>redirect 쓰임새</h1><p>시스템의 변화가 생기는 요청 경우 </p>
-<h1 id="forward"><a href="#forward" class="headerlink" title="forward"></a>forward</h1><p>forward는 요청을 하면 다른곳에 건네주고 응답해준다<br>이때 최초 호출한 url만 표시되고 이동한페이지의 url정보는 볼수없다 그리고 실행중인페이지와<br>forward에 의해 호출된 페이지는 req,resp를 공유한다.</p>
-<h1 id="forward-쓰임새"><a href="#forward-쓰임새" class="headerlink" title="forward 쓰임새"></a>forward 쓰임새</h1><p>시스템에 변화가 생기지않는 경우 </p>
-<h1 id="forward와-redirect의-차이점은"><a href="#forward와-redirect의-차이점은" class="headerlink" title="forward와 redirect의 차이점은"></a>forward와 redirect의 차이점은</h1><p>url의 변화여부(변화 -&gt; redirect.변화 x -&gt; forward)<br>req,resp 객체 재사용여부 (재사용 -&gt; forward, 재사용 x -&gt; redirect)</p>
-<p>참고<br><a href="https://doublesprogramming.tistory.com/63" target="_blank" rel="noopener">https://doublesprogramming.tistory.com/63</a><br><a href="https://goodncuteman.tistory.com/58" target="_blank" rel="noopener">https://goodncuteman.tistory.com/58</a><br><a href="https://scshim.tistory.com/28" target="_blank" rel="noopener">https://scshim.tistory.com/28</a></p>
+            참고
+https://doublesprogramming.tistory.com/63
+https://goodncuteman.tistory.com/58
+https://scshim.tistory.com/28
 
+서블릿 컨테이너,서블릿과 redirect와 forward의 차이를 공부했다.
+
+서블릿 컨테이너
+서블릿 컨테이너는 서블릿의 생명주기를 관리하고 요청이 들어올때마다 쓰레드를 만든다
+
+서블릿
+서블릿은 init(),service(),destory()로 되어있고
+service()는 요청에 따라 doget(),dopost()로 나뉘고 각요청은 자
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2020/03/24/2020-03-24/#more">Read More</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -232,20 +232,28 @@
             
         </h1>
         <div class="content">
-            <h1 id="text"><a href="#text" class="headerlink" title="text"></a>text</h1><ol>
-<li>a</li>
-<li>b</li>
-</ol>
-<hr>
-<h2 id="글쓸때"><a href="#글쓸때" class="headerlink" title="글쓸때"></a>글쓸때</h2><ol>
-<li>hexo new file 생성</li>
-<li>hexo publish</li>
-<li>hexo generate 정적파일 생성 </li>
-<li>hexo deploy 깃허브 올리기</li>
-</ol>
+            text
+ 1. a
+ 2. b
 
+
+
+
+글쓸때
+ 1. hexo new file 생성
+ 2. hexo publish
+ 3. hexo generate 정적파일 생성 
+ 4. hexo deploy 깃허브 올리기
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2020/03/23/2020-03-23/#more">Read More</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
