@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://wideo2.github.io/sitemap.xml
