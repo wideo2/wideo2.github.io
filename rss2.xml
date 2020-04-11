@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>wideo21</title>
+    <link>http://yoursite.com/</link>
+    
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description></description>
+    <pubDate>Thu, 09 Apr 2020 12:30:44 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>2020.04.09</title>
+      <link>http://yoursite.com/2020/04/09/2020-04-09/</link>
+      <guid>http://yoursite.com/2020/04/09/2020-04-09/</guid>
+      <pubDate>Thu, 09 Apr 2020 11:56:28 GMT</pubDate>
+      <description>
+      
+        상대경로와 절대경로
+상대경로: 현재 웹페이지를 기준으로 상대적으로 이미지의 위치를 나타내는 경로
+절대경로: 실제 그이미지가 위치한 곳의 전체경로
+
+상대경로 에서 ./ 페이지가 있는 현재폴더
+../ 그페이지의 위에 
+
+이미지 파일 형식
+gif: 제한적인 색을 사용하고 용량이 적고 투명,애니메이션 이미지 지원하는 형식
+jpg: 사진이나 일반적인 그림에 쓰이고 높은압축률과 자연스러운 색상표현을 지원하는 형식(투명 X)
+png: 이미지손실이 적으며 투명과 반투명을 모두 지원하는 형식
+
+구체성
+css의 선택자 구체성 0,0,0,0 이면 좌측
+      
+      </description>
+      
+      
+      <comments>http://yoursite.com/2020/04/09/2020-04-09/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>이클립스 단축키 정리</title>
+      <link>http://yoursite.com/2020/04/08/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%EB%8B%A8%EC%B6%95%ED%82%A4%EC%A0%95%EB%A6%AC/</link>
+      <guid>http://yoursite.com/2020/04/08/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%EB%8B%A8%EC%B6%95%ED%82%A4%EC%A0%95%EB%A6%AC/</guid>
+      <pubDate>Wed, 08 Apr 2020 14:03:21 GMT</pubDate>
+      <description>
+      
+        ALT + ?
+ALT + &lt;-,-&gt;: 이전, 이후 작업화면
+
+ALT + Shift + ?
+ALT + Shift + J: 클래스,메소드,멤버변수 위에 자동으로 주석생성
+ALT + Shift + S: source menu 보여줌
+ALT + Shift + S + R: Getter Setter 생성
+Alt + Shift + S + V: 유용하게 사용할수있는 기능이 implement나 override를 할메소드 찾아서
+Alt + Shift + S + c: 디폴트 생성자 자동구현
+Alt + Shift + S + o: 빌드 생성자 자동구현
+AL&lt;/-,-&gt;
+      
+      </description>
+      
+      
+      <comments>http://yoursite.com/2020/04/08/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%EB%8B%A8%EC%B6%95%ED%82%A4%EC%A0%95%EB%A6%AC/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>2020.04.04</title>
+      <link>http://yoursite.com/2020/04/04/2020-04-04/</link>
+      <guid>http://yoursite.com/2020/04/04/2020-04-04/</guid>
+      <pubDate>Sat, 04 Apr 2020 13:03:37 GMT</pubDate>
+      <description>
+      
+        1. junit 예외처리
+ 2. 클래스,객체, 인스턴스 개념 복습
+
+junit5는 expected가 안된다
+1
+2
+3
+4
+5
+
+
+@Test(expected = LoginUserNullException.class)
+void loginUserNull() throws Exception {	
+    UserVO.login(&quot;123&quot;,TEST_USER.getPwd());
+	};
+}
+
+
+그래서 이방식을 활용해야한다.
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+@Test()
+	void loginUserNull() throws Exception {
+      
+      </description>
+      
+      
+      <comments>http://yoursite.com/2020/04/04/2020-04-04/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>2020.03.24</title>
+      <link>http://yoursite.com/2020/03/24/2020-03-24/</link>
+      <guid>http://yoursite.com/2020/03/24/2020-03-24/</guid>
+      <pubDate>Tue, 24 Mar 2020 12:24:41 GMT</pubDate>
+      <description>
+      
+        참고
+https://doublesprogramming.tistory.com/63
+https://goodncuteman.tistory.com/58
+https://scshim.tistory.com/28
+
+서블릿 컨테이너,서블릿과 redirect와 forward의 차이를 공부했다.
+
+서블릿 컨테이너
+서블릿 컨테이너는 서블릿의 생명주기를 관리하고 요청이 들어올때마다 쓰레드를 만든다
+
+서블릿
+서블릿은 init(),service(),destory()로 되어있고
+service()는 요청에 따라 doget(),dopost()로 나뉘고 각요청은 자
+      
+      </description>
+      
+      
+      <comments>http://yoursite.com/2020/03/24/2020-03-24/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>서블릿 컨테이너란</title>
+      <link>http://yoursite.com/2020/03/24/%EC%84%9C%EB%B8%94%EB%A6%BF%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EB%9E%80/</link>
+      <guid>http://yoursite.com/2020/03/24/%EC%84%9C%EB%B8%94%EB%A6%BF%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EB%9E%80/</guid>
+      <pubDate>Mon, 23 Mar 2020 18:25:18 GMT</pubDate>
+      <description>
+      
+        출처
+원본 https://www.programcreek.com/2013/04/what-is-servlet-container/
+의역 https://scshim.tistory.com/28
+
+Web Server
+웹서버는 데이터 전송을 위해 http프로토콜을 쓰고 클라이언트가 요청하고
+서버가 응답하는 구조이다
+
+Servlet Container
+서블릿 컨테이너는 서블릿의 생성, 실행, 파괴를 담당하고
+웹서버안에 Container가 있다
+
+Servlet
+라이프 사이클이 존재 하며 3가지로 구성되어있다
+
+ 1. init()
+    생명주기중 초
+      
+      </description>
+      
+      
+      <comments>http://yoursite.com/2020/03/24/%EC%84%9C%EB%B8%94%EB%A6%BF%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EB%9E%80/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>2020.03.23</title>
+      <link>http://yoursite.com/2020/03/23/2020-03-23/</link>
+      <guid>http://yoursite.com/2020/03/23/2020-03-23/</guid>
+      <pubDate>Sun, 22 Mar 2020 19:49:04 GMT</pubDate>
+      <description>
+      
+        text
+ 1. a
+ 2. b
+
+
+
+
+글쓸때
+ 1. hexo new file 생성
+ 2. hexo publish
+ 3. hexo generate 정적파일 생성 
+ 4. hexo deploy 깃허브 올리기단축
+    hexo generate –deploy
+    hexo deploy –generate
+      
+      </description>
+      
+      
+      <comments>http://yoursite.com/2020/03/23/2020-03-23/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>
