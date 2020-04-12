@@ -9,8 +9,55 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>TIL이랑 자료공유 목적 블로그</description>
-    <pubDate>Sun, 12 Apr 2020 11:35:30 GMT</pubDate>
+    <pubDate>Sun, 12 Apr 2020 12:36:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>2020.04.12</title>
+      <link>https://wideo2.github.io/2020/04/12/2020-04-12/</link>
+      <guid>https://wideo2.github.io/2020/04/12/2020-04-12/</guid>
+      <pubDate>Sun, 12 Apr 2020 12:15:42 GMT</pubDate>
+      <description>
+      
+        원래 자바스크립트로 공백체크할때 
+
+1
+2
+3
+4
+5
+6
+
+
+if (frm.custname.value.trim() =  &quot;&quot;) {
+		alert(&quot;회원성명을 입력하게요&quot;);
+		frm.custname.focus();
+		
+		return false;
+	}
+
+
+어디서 공백일때 not 연산자를 붙이면 true된다고 해서 시도해봤는데
+
+1
+2
+3
+4
+5
+6
+
+
+if (!frm.custname.value.trim()) {
+		alert(&quot;회원성명을 입력하게요&quot;);
+		frm.custname.focus();
+		
+		return false;
+      
+      </description>
+      
+      
+      <comments>https://wideo2.github.io/2020/04/12/2020-04-12/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>웹의동작</title>

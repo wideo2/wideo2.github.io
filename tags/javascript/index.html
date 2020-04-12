@@ -8,14 +8,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="naver-site-verification" content="8494b45fe9f4c482c22beb421bebeca2c4672326">
 
-<link rel="canonical" href="https://wideo2.github.io/categories/til/2020-03-23/">
-<title>Category: 2020.03.23 - wideo2</title>
+<link rel="canonical" href="https://wideo2.github.io/tags/javascript/">
+<title>Tag: javascript - wideo2</title>
 
 
     <meta name="description" content="TIL이랑 자료공유 목적 블로그">
 <meta property="og:type" content="website">
 <meta property="og:title" content="wideo2">
-<meta property="og:url" content="https://wideo2.github.io/categories/TIL/2020-03-23/index.html">
+<meta property="og:url" content="https://wideo2.github.io/tags/javascript/index.html">
 <meta property="og:site_name" content="wideo2">
 <meta property="og:description" content="TIL이랑 자료공유 목적 블로그">
 <meta property="og:locale" content="en_US">
@@ -137,11 +137,8 @@
     <div class="card-content">
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
-            <li><a href="/categories">Categories</a></li>
-            
-            <li><a href="/categories/TIL/">TIL</a></li>
-            
-            <li class="is-active"><a href="#" aria-current="page">2020.03.23</a></li>
+            <li><a href="/tags">Tags</a></li>
+            <li class="is-active"><a href="#" aria-current="page">javascript</a></li>
         </ul>
         </nav>
     </div>
@@ -154,17 +151,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-22T19:49:04.000Z">2020-03-23</time>
+                <time class="level-item has-text-grey" datetime="2020-04-12T12:15:42.000Z">2020-04-12</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/TIL/2020-03-23/">2020.03.23</a>
+                <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/TIL/2020-04-12/">2020.04.12</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    a few seconds read (About 37 words)
+                    a minute read (About 171 words)
                 </span>
                 
                 
@@ -173,31 +170,50 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/03/23/2020-03-23/">2020.03.23</a>
+                <a class="has-link-black-ter" href="/2020/04/12/2020-04-12/">2020.04.12</a>
             
         </h1>
         <div class="content">
-            text
- 1. a
- 2. b
+            원래 자바스크립트로 공백체크할때 
+
+1
+2
+3
+4
+5
+6
 
 
+if (frm.custname.value.trim() =  "") {
+		alert("회원성명을 입력하게요");
+		frm.custname.focus();
+		
+		return false;
+	}
 
 
-글쓸때
- 1. hexo new file 생성
- 2. hexo publish
- 3. hexo generate 정적파일 생성 
- 4. hexo deploy 깃허브 올리기단축
-    hexo generate –deploy
-    hexo deploy –generate
+어디서 공백일때 not 연산자를 붙이면 true된다고 해서 시도해봤는데
+
+1
+2
+3
+4
+5
+6
+
+
+if (!frm.custname.value.trim()) {
+		alert("회원성명을 입력하게요");
+		frm.custname.focus();
+		
+		return false;
         </div>
         
         
         <div class="level is-mobile">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2020/03/23/2020-03-23/#more">Read More</a>
+                <a class="button is-size-7 is-light" href="/2020/04/12/2020-04-12/#more">Read More</a>
                 </div>
             </div>
         </div>
