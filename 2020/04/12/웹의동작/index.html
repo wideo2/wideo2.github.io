@@ -8,23 +8,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="naver-site-verification" content="8494b45fe9f4c482c22beb421bebeca2c4672326">
 
-<link rel="canonical" href="https://wideo2.github.io/2020/03/24/서블릿 컨테이너란/">
-<title>서블릿 컨테이너란 - wideo2</title>
+<link rel="canonical" href="https://wideo2.github.io/2020/04/12/웹의동작/">
+<title>웹의동작 - wideo2</title>
 
 
-    <meta name="description" content="출처 원본 https:&#x2F;&#x2F;www.programcreek.com&#x2F;2013&#x2F;04&#x2F;what-is-servlet-container&#x2F; 의역 https:&#x2F;&#x2F;scshim.tistory.com&#x2F;28  Web Server 웹서버는 데이터 전송을 위해 http프로토콜을 쓰고 클라이언트가 요청하고 서버가 응답하는 구조이다  Servlet Container 서블릿 컨테이너는 서">
+    <meta name="description" content="HTTP란  1. HTTP는 서버와 클라이언트가 인터넷상에서 데이터를 주고받기 위한 프로토콜이다.  2. HTTP는 어떤종류의 데이터라도 전송할수있다.  3. HTTP는 무상태(Stateless)프로토콜이라고도 한다.  HTTP 작동방식  1. 클라이언트가 서버에 연결을 한다.  2. 클라이언트가 서버에게 요청을 보낸다(요청데이터 포맷,헤더와바디로 나뉨).">
 <meta property="og:type" content="article">
-<meta property="og:title" content="서블릿 컨테이너란">
-<meta property="og:url" content="https://wideo2.github.io/2020/03/24/%EC%84%9C%EB%B8%94%EB%A6%BF%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EB%9E%80/index.html">
+<meta property="og:title" content="웹의동작">
+<meta property="og:url" content="https://wideo2.github.io/2020/04/12/%EC%9B%B9%EC%9D%98%EB%8F%99%EC%9E%91/index.html">
 <meta property="og:site_name" content="wideo2">
-<meta property="og:description" content="출처 원본 https:&#x2F;&#x2F;www.programcreek.com&#x2F;2013&#x2F;04&#x2F;what-is-servlet-container&#x2F; 의역 https:&#x2F;&#x2F;scshim.tistory.com&#x2F;28  Web Server 웹서버는 데이터 전송을 위해 http프로토콜을 쓰고 클라이언트가 요청하고 서버가 응답하는 구조이다  Servlet Container 서블릿 컨테이너는 서">
+<meta property="og:description" content="HTTP란  1. HTTP는 서버와 클라이언트가 인터넷상에서 데이터를 주고받기 위한 프로토콜이다.  2. HTTP는 어떤종류의 데이터라도 전송할수있다.  3. HTTP는 무상태(Stateless)프로토콜이라고도 한다.  HTTP 작동방식  1. 클라이언트가 서버에 연결을 한다.  2. 클라이언트가 서버에게 요청을 보낸다(요청데이터 포맷,헤더와바디로 나뉨).">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://wideo2.github.io/images/og_image.png">
-<meta property="article:published_time" content="2020-03-23T18:25:18.000Z">
-<meta property="article:modified_time" content="2020-04-12T09:30:32.803Z">
+<meta property="article:published_time" content="2020-04-12T09:33:04.000Z">
+<meta property="article:modified_time" content="2020-04-12T11:35:30.858Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="servlet">
-<meta property="article:tag" content="WebServer">
+<meta property="article:tag" content="HTTP">
+<meta property="article:tag" content="URL">
+<meta property="article:tag" content="URI">
+<meta property="article:tag" content="WEB">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://wideo2.github.io/images/og_image.png">
 
@@ -93,7 +95,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="서블릿 컨테이너란" height="28">
+                <img src="/images/logo.svg" alt="웹의동작" height="28">
             
             </a>
         </div>
@@ -148,17 +150,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-23T18:25:18.000Z">2020-03-24</time>
+                <time class="level-item has-text-grey" datetime="2020-04-12T09:33:04.000Z">2020-04-12</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/java/">java</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/java/servlet-jsp/">servlet/jsp</a>
+                <a class="has-link-grey -link" href="/categories/WEB/">WEB</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/WEB/HTTP-URL-URI/">HTTP(URL,URI)</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    5 minutes read (About 749 words)
+                    4 minutes read (About 595 words)
                 </span>
                 
                 
@@ -167,34 +169,45 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                서블릿 컨테이너란
+                웹의동작
             
         </h1>
         <div class="content">
-            <p>출처<br>원본 <a href="https://www.programcreek.com/2013/04/what-is-servlet-container/" target="_blank" rel="external nofollow noopener noreferrer">https://www.programcreek.com/2013/04/what-is-servlet-container/</a><br>의역 <a href="https://scshim.tistory.com/28" target="_blank" rel="external nofollow noopener noreferrer">https://scshim.tistory.com/28</a></p>
-<h1 id="Web-Server"><a href="#Web-Server" class="headerlink" title="Web Server"></a>Web Server</h1><p>웹서버는 데이터 전송을 위해 http프로토콜을 쓰고 클라이언트가 요청하고<br>서버가 응답하는 구조이다</p>
-<h1 id="Servlet-Container"><a href="#Servlet-Container" class="headerlink" title="Servlet Container"></a>Servlet Container</h1><p>서블릿 컨테이너는 서블릿의 생성, 실행, 파괴를 담당하고<br>웹서버안에 Container가 있다</p>
-<h1 id="Servlet"><a href="#Servlet" class="headerlink" title="Servlet"></a>Servlet</h1><p>라이프 사이클이 존재 하며 3가지로 구성되어있다</p>
-<ol>
-<li><p>init()<br>생명주기중 초기화 단계에 호출되고 서블릿이 was에서 초기화 매개변수에 접근할수<br>있게 한다</p>
-</li>
-<li><p>service()<br>init() 이후 요청들이 들어오면 호출되고 요청들은 별도로 나누어진 쓰레드에서 처리한다.<br>컨테이너는 모든 요청에대해서 service()를 요청하고 종류에따라 처리할수있는 메소드로 전달한다</p>
-</li>
-<li><p>destory()<br>서블릿 객체가 사라져야할때 호출되고 가지고있던 자원을 풀어준다.</p>
-</li>
+            <h1 id="HTTP란"><a href="#HTTP란" class="headerlink" title="HTTP란"></a>HTTP란</h1><ol>
+<li>HTTP는 서버와 클라이언트가 인터넷상에서 데이터를 주고받기 위한 프로토콜이다.</li>
+<li>HTTP는 어떤종류의 데이터라도 전송할수있다.</li>
+<li>HTTP는 무상태(Stateless)프로토콜이라고도 한다.</li>
 </ol>
-<p>각요청은 자체적인 스레드에 있으며 서블릿객체는 여러개의 쓰레드를 제공한다(thread not safe:코드가 다른 스레드에 의해 상태가 변경될수있음을 의미)<br>서블릿은 jvm 내부에서 작동하고 http요청들의 복잡성을 처리하기위해서 서블릿 컨테이너가 제공된다</p>
-<h1 id="서블릿-컨테이너와-서버-요청-처리"><a href="#서블릿-컨테이너와-서버-요청-처리" class="headerlink" title="서블릿 컨테이너와 서버 요청 처리"></a>서블릿 컨테이너와 서버 요청 처리</h1><ol>
-<li>웹서버가 http 요청을 받는다.</li>
-<li>웹서버는 요청을 서블릿컨테이너로 전달한다.</li>
-<li>서블릿이 컨테이너에 없다면, 서블릿을 동적으로 검색하여 컨테이너의 주소 공간에 로드된다.</li>
-<li>컨테이너가 서블릿의 init() 메소드를 호출하면, 서블릿이 초기화되고(서블릿이 처음 로드돴을때 한번만 호출)</li>
-<li>컨테이너가 서블릿의 service()메소드를 호출하여 http 요청을 처리합니다(예: 요청의 데이터를 읽고, 응답을 만들어냅니다.) 서블릿은 컨테이너 주소에 남아있고, 다른 http 요청들을 처리할수있습니다.</li>
-<li>웹서버는 동적으로 생성된 결과를 올바른 위치 반환</li>
+<h1 id="HTTP-작동방식"><a href="#HTTP-작동방식" class="headerlink" title="HTTP 작동방식"></a>HTTP 작동방식</h1><ol>
+<li>클라이언트가 서버에 연결을 한다.</li>
+<li>클라이언트가 서버에게 요청을 보낸다(요청데이터 포맷,헤더와바디로 나뉨).</li>
+<li>서버는 클라이언트에게 응답을 보낸다(응답데이터 포맷,헤더와 바디로나뉨).</li>
+<li>서버는 클라이언트에 연결을 끊어버린다.</li>
 </ol>
-<p><img src="/image/cweb.jpg" alt></p>
-<h1 id="JVM-역할"><a href="#JVM-역할" class="headerlink" title="JVM 역할"></a>JVM 역할</h1><p>서블릿을 사용하는것은 JVM이 각요청을 분리된 자바 스레드 내부에서 처리 하도록하고(서블릿 컨테이너의 주요 장점)<br>서블릿 컨테이너의 가장 중요한 기능은 요청을 서블릿에 전달해서 처리되록하고, jvm이 해당요청 처리한후에<br>생성된 결과를 올바른 장소에 동적으로 반환<br>대부분은 서블릿 컨테이너는 하나의 jvm에서 동작하지만 여러가지가 필요한 경우도 존재</p>
-<p>출처<br>원본 <a href="https://www.programcreek.com/2013/04/what-is-servlet-container/" target="_blank" rel="external nofollow noopener noreferrer">https://www.programcreek.com/2013/04/what-is-servlet-container/</a><br>의역 <a href="https://scshim.tistory.com/28" target="_blank" rel="external nofollow noopener noreferrer">https://scshim.tistory.com/28</a></p>
+<p><img src="/image/http.png" alt></p>
+<h1 id="무상태-Stateless-장단점"><a href="#무상태-Stateless-장단점" class="headerlink" title="무상태(Stateless) 장단점"></a>무상태(Stateless) 장단점</h1><p>stateless는 클라이언트에게 세션정보난 상태보관을 요구하지 않는다</p>
+<h2 id="장점"><a href="#장점" class="headerlink" title="장점"></a>장점</h2><p>불특정 다수를 대상으로 하는 서비스에는 적합하다.</p>
+<p>이유는 클라이언트와 서버가 게속 연결된 형태가 아니기때문에 클/서 간의 최대연결수보다 훨씬 많은 요청과 응답을 할수있다.</p>
+<h2 id="단점"><a href="#단점" class="headerlink" title="단점"></a>단점</h2><p>연결을 끊어버리기 때문에, 클라이언트가 이전상황을 알수가 없다.</p>
+<p>ex) 로그인을 했는데 그 정보가 저장되지 않는다.</p>
+<h2 id="보완"><a href="#보완" class="headerlink" title="보완"></a>보완</h2><p>이러한 특징때문에 정보유지를 위해 Cookie,session같은 기술이 등장했다.</p>
+<h1 id="URI"><a href="#URI" class="headerlink" title="URI"></a>URI</h1><ol>
+<li>하나의 리소스를 가리키는 문자열이다.</li>
+<li>인터넷에 있는 자원을 나타내는 유일한 주소</li>
+<li>하위개념으로는 URL,URI</li>
+</ol>
+<p>형식 :  프로토콜의 종류/서버 ip주소,도메인주소,포트번호/자원의위치/자원의 값</p>
+<p>ex) <a href="http://wideo2.github.io/main/index.html?p=23">http://wideo2.github.io/main/index.html?p=23</a></p>
+<h1 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h1><ol>
+<li>인터넷상의 자원위치</li>
+<li>특정 웹서버의 특정파일에 접근하기 위한 경로 혹은 주소</li>
+</ol>
+<p>형식 :  프로토콜의 종류/서버 ip주소,도메인주소,포트번호/자원의위치</p>
+<p>ex) <a href="http://wideo2.github.io/main/index.html">http://wideo2.github.io/main/index.html</a></p>
+<h1 id="URI와-URL의-차이점은-자원의-값을-표시하냐-안하냐이다"><a href="#URI와-URL의-차이점은-자원의-값을-표시하냐-안하냐이다" class="headerlink" title="URI와 URL의 차이점은 자원의 값을 표시하냐 안하냐이다."></a>URI와 URL의 차이점은 자원의 값을 표시하냐 안하냐이다.</h1><p>ex)<br>a: <a href="http://wideo2.github.io/main/index.html">http://wideo2.github.io/main/index.html</a><br>b: <a href="http://wideo2.github.io/main/index.html?p=78">http://wideo2.github.io/main/index.html?p=78</a></p>
+<p>a와b는 같은 URL이지만 다른 URI이다</p>
+<p>참고자료,출처</p>
+<p><a href="https://www.edwith.org/boostcourse-web/lecture/16661/" target="_blank" rel="external nofollow noopener noreferrer">https://www.edwith.org/boostcourse-web/lecture/16661/</a><br><a href="https://ko.wikipedia.org/wiki/%ED%86%B5%ED%95%A9_%EC%9E%90%EC%9B%90_%EC%8B%9D%EB%B3%84%EC%9E%90" target="_blank" rel="external nofollow noopener noreferrer">https://ko.wikipedia.org/wiki/%ED%86%B5%ED%95%A9_%EC%9E%90%EC%9B%90_%EC%8B%9D%EB%B3%84%EC%9E%90</a></p>
 
         </div>
         
@@ -202,7 +215,7 @@
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/WebServer/" rel="tag">WebServer</a>, <a class="has-link-grey -link" href="/tags/servlet/" rel="tag">servlet</a>
+                    <a class="has-link-grey -link" href="/tags/HTTP/" rel="tag">HTTP</a>, <a class="has-link-grey -link" href="/tags/URI/" rel="tag">URI</a>, <a class="has-link-grey -link" href="/tags/URL/" rel="tag">URL</a>, <a class="has-link-grey -link" href="/tags/WEB/" rel="tag">WEB</a>
                 </div>
             </div>
         </div>
@@ -228,17 +241,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/24/2020-03-24/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">2020.03.24</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/23/2020-03-23/">
-                <span class="level-item">2020.03.23</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/04/09/2020-04-09/">
+                <span class="level-item">2020.04.09</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -266,25 +272,41 @@
                     Catalogue
                 </h3>
                 <ul class="menu-list"><li>
-        <a class="is-flex" href="#Web-Server">
+        <a class="is-flex" href="#HTTP란">
         <span class="has-mr-6">1</span>
-        <span>Web Server</span>
+        <span>HTTP란</span>
         </a></li><li>
-        <a class="is-flex" href="#Servlet-Container">
+        <a class="is-flex" href="#HTTP-작동방식">
         <span class="has-mr-6">2</span>
-        <span>Servlet Container</span>
+        <span>HTTP 작동방식</span>
         </a></li><li>
-        <a class="is-flex" href="#Servlet">
+        <a class="is-flex" href="#무상태-Stateless-장단점">
         <span class="has-mr-6">3</span>
-        <span>Servlet</span>
+        <span>무상태(Stateless) 장단점</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#장점">
+        <span class="has-mr-6">3.1</span>
+        <span>장점</span>
         </a></li><li>
-        <a class="is-flex" href="#서블릿-컨테이너와-서버-요청-처리">
+        <a class="is-flex" href="#단점">
+        <span class="has-mr-6">3.2</span>
+        <span>단점</span>
+        </a></li><li>
+        <a class="is-flex" href="#보완">
+        <span class="has-mr-6">3.3</span>
+        <span>보완</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#URI">
         <span class="has-mr-6">4</span>
-        <span>서블릿 컨테이너와 서버 요청 처리</span>
+        <span>URI</span>
         </a></li><li>
-        <a class="is-flex" href="#JVM-역할">
+        <a class="is-flex" href="#URL">
         <span class="has-mr-6">5</span>
-        <span>JVM 역할</span>
+        <span>URL</span>
+        </a></li><li>
+        <a class="is-flex" href="#URI와-URL의-차이점은-자원의-값을-표시하냐-안하냐이다">
+        <span class="has-mr-6">6</span>
+        <span>URI와 URL의 차이점은 자원의 값을 표시하냐 안하냐이다.</span>
         </a></li></ul>
             </div>
         </div>
@@ -414,7 +436,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="서블릿 컨테이너란" height="28">
+                    <img src="/images/logo.svg" alt="웹의동작" height="28">
                 
                 </a>
                 <p class="is-size-7">
