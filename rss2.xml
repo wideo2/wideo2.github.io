@@ -9,8 +9,49 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>TIL이랑 자료공유 목적 블로그</description>
-    <pubDate>Wed, 15 Apr 2020 11:18:21 GMT</pubDate>
+    <pubDate>Mon, 20 Apr 2020 15:14:59 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>이진탐색(Binary Search)</title>
+      <link>https://wideo2.github.io/2020/04/21/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89-Binary-Search/</link>
+      <guid>https://wideo2.github.io/2020/04/21/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89-Binary-Search/</guid>
+      <pubDate>Mon, 20 Apr 2020 15:02:46 GMT</pubDate>
+      <description>
+      
+        이진탐색
+이진 탐색은 정렬되어있을때 사용할수있으며 중앙값들을 구해 인덱스를 찾아낸다.
+
+일단 코드
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+
+
+public static int solution(int e,int list[]) {
+		int start = 0;
+		int end = list.length -1;
+		int mid = 0;
+		while (start 
+      
+      </description>
+      
+      
+      <comments>https://wideo2.github.io/2020/04/21/%EC%9D%B4%EC%A7%84%ED%83%90%EC%83%89-Binary-Search/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>2020.04.15</title>
